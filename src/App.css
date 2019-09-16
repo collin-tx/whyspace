@@ -1,3 +1,6 @@
+#nav {
+}
+
 .philosopher-card {
     height: 400px;
     width: 300px;
@@ -11,3 +14,4 @@
 .explore-philosophers {
     display: flex;
 }
+
