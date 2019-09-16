@@ -7,3 +7,7 @@
     height: 150px;
     width: 100px;
 }
+
+.explore-philosophers {
+    display: flex;
+}

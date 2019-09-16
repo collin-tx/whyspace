@@ -23,7 +23,9 @@ export class Explore extends Component {
             <div>
                 explore
                 <ul className="list-group">
-                   {philosophers}
+                    <div className="explore-philosophers">
+                        {philosophers}
+                    </div>
                 </ul>
             </div>
         )
