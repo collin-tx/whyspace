@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import Explore from './components/Explore';
 import firebase from 'firebase';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 

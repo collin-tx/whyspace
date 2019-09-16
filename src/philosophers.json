@@ -1,0 +1,26 @@
+{
+    "Nietzsche": {
+
+    "name": "Friedrich Nietzsche",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Nietzsche1882.jpg", 
+    "quote": "Live Dangerously", 
+    "ideas": ["Eternal Recurrence", "Ubermensch"],
+    "dates": ["1844", "1900"]
+},
+    "Hegel":
+{
+    "name": "George Wilhelm Friedrich Hegel",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/08/Hegel_portrait_by_Schlesinger_1831.jpg", 
+    "quote": "We learn from history that we do not learn from history.", 
+    "ideas": ["Philosophy of History", "Hegelianism"],
+    "dates": ["1770", "1831"]
+},
+    "Heidegger":
+{
+    "name": "Martin Heidegger",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/64/Heidegger_2_%281960%29.jpg", 
+    "quote": "Making itself intelligible is suicide for philosophy.", 
+    "ideas": ["Dasein", "Hermeneutic Circle"],
+    "dates": ["1889", "1976"]
+}
+}
