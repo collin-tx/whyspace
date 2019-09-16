@@ -1,5 +1,9 @@
 import React from 'react';
 import Home from './components/Home';
+import { BrowserRouter, Route} from 'react-router-dom';
+import Nav from './components/Nav';
+import Explore from './components/Explore';
+import firebase from 'firebase';
 import './App.css';
 
 function App() {
@@ -14,10 +18,17 @@ function App() {
     appId: process.env.REACT_APP_FIREBASE_ID
   };
 
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+  }
+  const database = firebase.database();
+
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <BrowserRouter>
+      <Nav />
+      <Route path="/" render={ () => <Home firebase={database} /> } exact />
+      <Route path="/explore" render={() => <Explore firebase={database} />} />
+    </BrowserRouter>
   );
 }
 
