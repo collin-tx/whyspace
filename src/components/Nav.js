@@ -5,8 +5,9 @@ export class Nav extends Component {
     render() {
         return (
             <div id="nav">
-                <Link to="/" className="p-1">home</Link>
+                <Link to="/" className="pr-1">home</Link>
                 <Link to="/explore">explore</Link>
+                <Link to="/about" className="p-1">about</Link>
             </div>
         )
     }

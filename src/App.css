@@ -4,9 +4,21 @@
 #title-showcase {
     height: 20vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(to right, #154360, #58D68D) 
+}
+
+#app-title {
+    margin-top: 0;
+    margin-bottom: -35px;
+    padding: 0;
+}
+
+#app-tag {
+    margin: 0;
+    padding: 0;
 }
 
 .users-icon {

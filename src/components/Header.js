@@ -7,8 +7,9 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons';
 export default function Header() {
     return (
         <header id="app-header">
-            <div id="title-showcase" className="text-center">
+            <div id="title-showcase" className="text-center text-light">
                 <h1 id="app-title"><FontAwesomeIcon icon={faUsers} className="users-icon" />whyspace.</h1>
+                <hr /><p id="app-tag">a place to exist</p>
             </div>
             <Nav />
         </header>

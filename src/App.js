@@ -3,6 +3,7 @@ import Home from './components/Home';
 import { BrowserRouter, Route} from 'react-router-dom';
 import Header from './components/Header';
 import Explore from './components/Explore';
+import About from './components/About';
 import firebase from 'firebase';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -29,6 +30,7 @@ function App() {
       <Header />
       <Route path="/" render={ () => <Home firebase={database} /> } exact />
       <Route path="/explore" render={() => <Explore firebase={database} />} />
+      <Route path="/about" render={() => <About firebase={database} />} />
     </BrowserRouter>
   );
 }
