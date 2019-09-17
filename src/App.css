@@ -1,6 +1,18 @@
 #nav {
 }
 
+#title-showcase {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #154360, #58D68D) 
+}
+
+.users-icon {
+    font-size: 28px;
+}
+
 .philosopher-card {
     height: 400px;
     width: 300px;
