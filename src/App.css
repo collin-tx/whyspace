@@ -39,3 +39,14 @@
     display: flex;
 }
 
+/* Sign up */
+.sign-up-container {
+    display: flex;
+    justify-content: center;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
