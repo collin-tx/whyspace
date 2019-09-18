@@ -3,11 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFacebook } from '@fortawesome/free-solid-svg-icons';
 
-const SignUp = () => {
+const SignUp = (props) => {
     return (
             <div className="form-container sign-up-container">
                 <form action="#">
-                    <h1>Create Account</h1>
+                    <h2>Create Account</h2>
+                    <button onClick={props.showSignIn}>or sign in</button>
                     <div className="social-container">
                     </div>
                     <div className="row">
