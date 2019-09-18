@@ -2,10 +2,10 @@ import React from 'react';
 
 const SignIn = (props) => {
     return (
-        <div className="">
-            <h2>Sign In to your account</h2>
-            <button onClick={props.showSignUp}>or create a new account</button>
+        <div className="form-container sign-in-container">
             <form>
+                <h2>Sign In</h2>
+                <button onClick={props.showSignUp}>or sign up</button>
                 <div className="row">
                     <p>email: </p>
                     <input type="email" placeholder="Email" />

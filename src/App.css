@@ -2,7 +2,7 @@
 }
 
 #title-showcase {
-    height: 20vh;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,7 +40,8 @@
 }
 
 /* Sign up */
-.sign-up-container {
+.sign-up-container,
+.sign-in-container {
     display: flex;
     justify-content: center;
 }

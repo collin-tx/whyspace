@@ -6,11 +6,9 @@ import { faFacebook } from '@fortawesome/free-solid-svg-icons';
 const SignUp = (props) => {
     return (
             <div className="form-container sign-up-container">
-                <form action="#">
+                <form>
                     <h2>Create Account</h2>
                     <button onClick={props.showSignIn}>or sign in</button>
-                    <div className="social-container">
-                    </div>
                     <div className="row">
                         <p>display name: </p>
                         <input type="text" placeholder="Name" />
