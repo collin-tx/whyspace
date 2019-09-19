@@ -22,7 +22,7 @@ export class SignUp extends React.Component {
 
     createNewAccount = (e) => {
         e.preventDefault();
-        console.log(this.props.firebase); //getting error that firebase.auth is not a function *eyeroll*
+        console.log(this.props.firebase.auth()); //getting error that firebase.auth is not a function *eyeroll*, problem was that I was only passing the database and not entire fb obj in APP
         // this.props.firebase
         //     .auth()
         //     .createUserWithEmailAndPassword(this.state.email, this.state.password)

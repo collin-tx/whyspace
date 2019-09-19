@@ -24,10 +24,12 @@ function App() {
   firebase.initializeApp(firebaseConfig);
   const database = firebase.database();
 
+  console.log('hi', firebase.auth())
+
   return (
     <BrowserRouter>
       <Header />
-      <Route path="/" render={ () => <Home firebase={database} /> } exact />
+      <Route path="/" render={ () => <Home firebase={firebase} /> } exact />
       <Route path="/explore" render={() => <Explore firebase={database} />} />
       <Route path="/about" render={() => <About firebase={database} />} />
     </BrowserRouter>
