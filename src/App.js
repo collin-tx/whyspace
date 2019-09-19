@@ -7,6 +7,7 @@ import About from './components/About';
 import firebase from 'firebase';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+require('firebase/auth');
 
 function App() {
 
@@ -20,9 +21,7 @@ function App() {
     appId: process.env.REACT_APP_FIREBASE_ID
   };
 
-  if (!firebase.apps.length) {
-    firebase.initializeApp(firebaseConfig);
-  }
+  firebase.initializeApp(firebaseConfig);
   const database = firebase.database();
 
   return (

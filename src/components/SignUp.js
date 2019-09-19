@@ -1,5 +1,4 @@
 import React from 'react';
-import firebase from 'firebase';
 
 export class SignUp extends React.Component {
     
@@ -23,7 +22,7 @@ export class SignUp extends React.Component {
 
     createNewAccount = (e) => {
         e.preventDefault();
-        //console.log(this.props.firebase); getting error that firebase.auth is not a function *eyeroll*
+        console.log(this.props.firebase); //getting error that firebase.auth is not a function *eyeroll*
         // this.props.firebase
         //     .auth()
         //     .createUserWithEmailAndPassword(this.state.email, this.state.password)
