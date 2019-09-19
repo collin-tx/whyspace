@@ -28,7 +28,7 @@ export class Home extends Component {
         return (
             <div>
                 <h2>welcome home</h2>
-                { this.state.showSignUp && <SignUp showSignIn={this.showSignIn} /> }
+                { this.state.showSignUp && <SignUp showSignIn={this.showSignIn} firebase={this.props.firebase} /> }
                 { this.state.showSignIn && <SignIn showSignUp={this.showSignUp} /> }
 
             </div>

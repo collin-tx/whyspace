@@ -10,6 +10,7 @@ const PhilosList = (props) => {
                 <i>{props.quote}</i>
                 <p>{`${props.dates[0]} - ${props.dates[1]}`}</p>
                 <p>Major ideas: {props.ideas[0] + ", " + props.ideas[1]}</p>
+                <button>Add</button>
             </li>
         </div>
     );
