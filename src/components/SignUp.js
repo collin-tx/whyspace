@@ -27,11 +27,11 @@ export class SignUp extends React.Component {
             .auth()
             .createUserWithEmailAndPassword(this.state.email, this.state.password)
             .then(user => {
-                this.setState({ accountCreated: true })
-                // user.updateProfile({
-                //     displayName: this.state.displayName,
-                //     photoURL: `https://promiseplace.org/wp-content/uploads/2018/10/avatars-img3.jpg`
-                // });
+                this.setState({ accountCreated: true, user: user.user })
+                user.user.updateProfile({
+                    displayName: this.state.displayName,
+                    photoURL: `https://promiseplace.org/wp-content/uploads/2018/10/avatars-img3.jpg`
+                });
                 console.log(user);
             });
     }
