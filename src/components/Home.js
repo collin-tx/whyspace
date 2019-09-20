@@ -33,7 +33,8 @@ export class Home extends Component {
             .signInWithEmailAndPassword(email, password)
             .then(data => {
                 this.setState({ signedIn: true, user: data.user, showSignIn: false, showSignUp: false });
-                console.log(data.user);
+                console.log(this.state.user.photoURL)
+
             });
     }
 

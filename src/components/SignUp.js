@@ -30,7 +30,7 @@ export class SignUp extends React.Component {
                 this.setState({ accountCreated: true, user: user.user })
                 user.user.updateProfile({
                     displayName: this.state.displayName,
-                    photoURL: `https://promiseplace.org/wp-content/uploads/2018/10/avatars-img3.jpg`
+                    photoURL: 'https://i.ibb.co/MkXy4q7/anon.jpg'
                 });
                 console.log(user);
             });
