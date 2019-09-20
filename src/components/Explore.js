@@ -4,6 +4,11 @@ import data from '../philosophers.json';
 import PhilosList from './PhilosList';
 
 export class Explore extends Component {
+    
+    state = {
+        user: this.props.user
+    }
+
     render() {
         //const nietzsche = new Philosopher('Friedrich Nietzsche', 'https://upload.wikimedia.org/wikipedia/commons/2/23/Nietzsche1882.jpg', 'Live Dangerously', ['Eternal Recurrence', 'Ubermensch'], ['1844', '1900']);
         const philosopherArray = [];
@@ -22,6 +27,7 @@ export class Explore extends Component {
         return (
             <div>
                 <h2>explore</h2>
+                {this.state.user && <p>{`hello ${this.state.user}, explore some new friends`}</p>}
                 <ul className="list-group">
                     <div className="explore-philosophers">
                         {philosophers}

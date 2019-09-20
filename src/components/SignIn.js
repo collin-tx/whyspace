@@ -16,23 +16,23 @@ export class SignIn extends React.Component {
         this.setState({ password: e.target.value });
     }
 
-    login = (e) => {
-        e.preventDefault();
-        this.setState({ signedIn: true });
-        this.props.firebase
-            .auth()
-            .signInWithEmailAndPassword(this.state.email, this.state.password)
-            .then(data => {
-                this.setState({ signedIn: true });
-                console.log(data.user);
-            });
-    }
+    // login = (e) => {
+    //     e.preventDefault();
+    //     this.setState({ signedIn: true });
+    //     this.props.firebase
+    //         .auth()
+    //         .signInWithEmailAndPassword(this.state.email, this.state.password)
+    //         .then(data => {
+    //             this.setState({ signedIn: true });
+    //             console.log(data.user);
+    //         });
+    // }
     
     render(){
     return (
         <div className="form-container sign-in-container">
             {!this.state.signedIn &&
-                <form onSubmit={this.login}>
+                <form onSubmit={(e) => this.props.login(e, this.state.email, this.state.password)}>
                     <h2>Sign In</h2>
                     <button onClick={this.props.showSignUp}>or sign up</button>
                     <div className="row">
